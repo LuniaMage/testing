@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/css/uikit.min.css" />
+        <title>Creaetive Plan Test everything but the body</title>
+    </head>
+<body>
+
+<!----------------------------------TOP MENU ----------------------------->
+
+    <!-- search -->
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <!-- nav left -->
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+    
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+        <!-- nav right -->
+        <div class="uk-navbar-right">
+            <div>
+                <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button class="uk-button uk-button-text" type="button" onclick="UIkit.notification({message: 'Top Center...', pos: 'top-right'})"><span class="uk-badge">10</span></button><!-- replace message icon with small bell -->
+     
+        <img class="avatar" src="/assets/girl-with-cat-ears.svg" width="30" height="30" uk-svg><!-- make icon into dropdown menu for logout -->
+        </div>
+ 
+    </nav>
+<!-- end nav -->
+
+
+
+<!----------------------------------SIDEBAR MENU ----------------------------->
+<!--     
+<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button> -->
+
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">MENU</button>
+
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#">Dashboard</a></li>
+            <li class="uk-parent">
+                <a href="#">Spotlight Projects</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">LunaVerse</a></li>
+                    <li><a href="#">modular.Life</a></li>
+                    <li><a href="#">Creative Mage</a></li>
+                    <li><a href="#">Take A Seat</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Dashboard</a></li>
+            <li class="uk-parent">
+                <a href="#">Spotlight Projects</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="#">LunaVerse</a></li>
+                    <li><a href="#">modular.life</a></li>
+                    <li><a href="#">Take A Seat</a></li>
+                </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span>Coming Soon</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<ul class="uk-subnav uk-subnav-divider uk-position-bottom-center" uk-margin>
+    <li class="uk-active"><a href="#">Footer</a></li>
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+</ul>
+
+
+    <!-- scripts -->
+<script src="/index.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit-icons.min.js"></script> 
+<script src="uikit/dist/js/uikit-icons.min.js"></script>
+
+
+</body>
+</html>
