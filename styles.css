@@ -2,3 +2,11 @@
 .avatar {
     margin: 10px;
 }
+
+.cat-box-sm {
+    height: 110px;
+    margin-bottom: 15px;
+}
+.cat-box-lg {
+    height: 360px;
+}
